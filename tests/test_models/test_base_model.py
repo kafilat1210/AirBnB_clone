@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-# Created by Emmanuel Ademola & Israel Ewedairo
-
 """Unittest for base_model.py"""
 
 import unittest
