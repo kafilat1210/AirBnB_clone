@@ -25,7 +25,7 @@ class BaseModel:
             self.id = str(uuid.uuid4())  # Unique id assignment.
             self.created_at = datetime.now()  # Current datetime assignment.
             self.updated_at = self.created_at  # Same datetime as created_at.
-# models.storage.new(self)
+            models.storage.new(self)
 
     def __str__(self):
         """String representation of the BaseModel instance."""
@@ -35,8 +35,8 @@ class BaseModel:
     def save(self):
         """Update 'updated_at' with the current datetime."""
         self.updated_at = datetime.now()
-#        models.storage.new(self)
-#       models.storage.save()
+        models.storage.new(self)
+        models.storage.save()
 
     def to_dict(self):
         """Dictionary representation of the BaseModel instance."""
